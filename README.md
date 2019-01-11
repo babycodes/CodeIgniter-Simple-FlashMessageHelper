@@ -14,6 +14,10 @@
  # How To Use ?
  **set_flashdata()**
  - instead of using ```$this->session->set_flashdata($name, $message)``` we can just use ```setFlashMessage($name, $message, $type)```
+ **note**
+ - ```setFlashMessage()``` just can use $name success and error
+ - like this ```setFlashMessage('succes','message','type canbe success, warning, danger based on bootstrap class')
+ **flashdata()**
  - instead of using ```$this->session->flashdata($name)``` we can just use ```getFlashMessage()``` with out fill the parameter
 
  **controller Example**
