@@ -17,13 +17,14 @@
  - instead of using **$this->session->flashdata($name)** we can just use **getFlashMessage()** with out fill the parameter
 
  **controller Example**
+ ```
  public function index()
  {
  	$data = [
  		'notification' => getNotification() // this will return value afther setFlashMessage() declarated
  	];
  }
-
+```
  **view example**
  - simple just echo the name of your notification variable
 
