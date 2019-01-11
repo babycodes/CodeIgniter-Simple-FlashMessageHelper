@@ -14,9 +14,11 @@
  # How To Use ?
  **set_flashdata()**
  - instead of using ```$this->session->set_flashdata($name, $message)``` we can just use ```setFlashMessage($name, $message, $type)```
+ 
  **note**
  - ```setFlashMessage()``` just can use $name success and error
- - like this ```setFlashMessage('succes','message','type canbe success, warning, danger based on bootstrap class')
+ - like this ```setFlashMessage('succes','message','type canbe success, warning, danger based on bootstrap class')```
+ 
  **flashdata()**
  - instead of using ```$this->session->flashdata($name)``` we can just use ```getFlashMessage()``` with out fill the parameter
 
@@ -36,7 +38,7 @@
  ```<?php echo $your_notification_variable; ?>```
 
  # EXTRA
- if you want to make flashmessage disappear after a view second i create a simple javascript script for it
+ - if you want to make flashmessage disappear after a view second i create a simple javascript script for it
  **how to use it ?**
  - copy the js syntax into your project folder and load it into your footer
  - create some tag with **id="notification"** and attribute **data-message="fill and echo inside this with your php notification variable name"**
