@@ -42,4 +42,6 @@
  **how to use it ?**
  - copy the js syntax into your project folder and load it into your footer
  - create some tag with **id="notification"** and attribute **data-message="fill and echo inside this with your php notification variable name"**
+- like this ```<p id="notification" data-message="<?php $notification or any variable you pass ?>">```
+
 
